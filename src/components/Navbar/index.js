@@ -10,12 +10,15 @@ import {
   NavLinks,
   NavBtn,
   NavInstagram,
+  MobileIcon,
 } from "./styles";
+import { FaBars } from 'react-icons/fa';
+import { IconContext } from 'react-icons/lib';
 import Instagram from "../../assets/instagram2.png";
 import Asadal from "../../assets/Asadal.png";
 import menuPdf from "../../assets/menu.pdf";
-// 폰트 통일 Roboto Slab
-const Navbar = () => {
+
+const Navbar = ({toggle}) => {
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
@@ -38,17 +41,24 @@ const Navbar = () => {
     window.open(menuPdf);
   };
 
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
   return (
+    <>
+    <IconContext.Provider value={{ color: '#000' }}>
     <Nav scrollNav={scrollNav}>
       <NavContainer>
-        <NavLogo to="home">
-          {/* 아사달 <br />
-          Asadal Korean Cuisine */}
+        <NavLogo to="/" onClick={toggleHome}>
           <NavHome src={Asadal} />
         </NavLogo>
+        <MobileIcon onClick={toggle}>
+          <FaBars />
+        </MobileIcon>
         <NavMenu>
           <NavItem>
-            <NavLinks onClick={openMenu}>Menu</NavLinks>
+            <NavLinks to="/" onClick={openMenu}>Menu</NavLinks>
           </NavItem>
           <NavItem>
             <NavLinks
@@ -72,14 +82,14 @@ const Navbar = () => {
               Location
             </NavLinks>
           </NavItem>
-          {/* 인스타는 로고 삽입 */}
-          {/* 링크 https://www.instagram.com/asadal_korean_cuisine/ */}
           <NavBtn onClick={openInstagram}>
             <NavInstagram src={Instagram}></NavInstagram>
           </NavBtn>
         </NavMenu>
       </NavContainer>
     </Nav>
+    </IconContext.Provider>
+    </>
   );
 };
 

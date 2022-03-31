@@ -16,10 +16,7 @@ import {
 } from "./styles";
 import Bg from "../../assets/background.jpg";
 import logo from "../../assets/logo.png";
-import Std from "../../assets/SkipTheDish.png";
-import Skip from "../../assets/skip.png";
 import SkipLogo from "../../assets/skipLogo.png";
-import Ue from "../../assets/UberEats.jpg";
 import Uber from "../../assets/UberEatsLogo.jpg";
 import Fan from "../../assets/Fantuan.jpg";
 
@@ -34,7 +31,7 @@ const Page1 = () => {
   };
   const openFantuan = () => {
     window.open(
-      "https://www.ubereats.com/ca/store/asadal-korean-cuisine/nj4Tq_mIRRi0hIvEKXyOVA?diningMode=DELIVERY/",
+      "https://www.fantuanorder.com/store/Restaurant/ca-11478?shippingType=1&rTraceId=takeaway-1-0-1506836914395799552",
     );
   };
   return (
