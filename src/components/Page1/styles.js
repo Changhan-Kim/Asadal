@@ -37,10 +37,14 @@ export const HomeContents = styled.div`
 
 export const Logo = styled.img`
   width: 700px;
-
-  @media screen and (max-width: 868px) {
+  
+  @media screen and (max-width: 992px) {
     width: 500px;
   }
+  @media screen and (max-width: 768px) {
+    width: 300px;
+  }
+
 `;
 
 export const LogoP = styled.p`
@@ -49,11 +53,17 @@ export const LogoP = styled.p`
   margin-top: -130px;
   margin-bottom: 50px;
 
-  @media screen and (max-width: 868px) {
-    font-size: 24px;
+  @media screen and (max-width: 992px) {
+    font-size: 32px;
     margin-top: -100px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     }
+
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+      margin-top: -50px;
+      margin-bottom: 25px
+  }  
 `;
 
 export const DeliIcon = styled.div`
@@ -76,12 +86,12 @@ export const SkipTheDish = styled.img`
     filter: none;
   }
 
-  @media screen and (max-width: 868px) {
+  @media screen and (max-width: 992px) {
     width: 150px;
-  height: 150px;
+    height: 150px;
   }
 
-  @media screen and (max-width: 520px) {
+  @media screen and (max-width: 768px) {
     width: 100px;
     height: 100px;
   }
@@ -101,12 +111,12 @@ export const UberEats = styled.img`
     filter: none;
   }
 
-  @media screen and (max-width: 868px) {
+  @media screen and (max-width: 992px) {
     width: 150px;
-  height: 150px;
+    height: 150px;
   }
 
-  @media screen and (max-width: 520px) {
+  @media screen and (max-width: 768px) {
     width: 100px;
     height: 100px;
   }
@@ -124,12 +134,12 @@ export const Fantuan = styled.img`
     filter: none;
   }
 
-  @media screen and (max-width: 868px) {
+  @media screen and (max-width: 992px) {
     width: 150px;
     height: 150px;
   }
 
-  @media screen and (max-width: 520px) {
+  @media screen and (max-width: 768px) {
     width: 100px;
     height: 100px;
   }

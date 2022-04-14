@@ -43,7 +43,11 @@ const Page2 = () => {
         });
       },
     );
-    e.target.reset();
+   setName('');
+   setPhone('');
+   setEmail('');
+   setSubject('');
+   setMessage('');
   };
 
   return (
@@ -52,7 +56,7 @@ const Page2 = () => {
         <SectionLeft>
           <Logo src={logo}></Logo>
           <Paragraph>
-            Looking to place a lartge order for your home party?
+            Looking to place a large order for your home party?
           </Paragraph>
           <Paragraph>
             Email us to place your order today or ask us for possible options!

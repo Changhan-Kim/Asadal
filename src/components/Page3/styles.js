@@ -28,12 +28,12 @@ export const MapImg = styled.img`
 `;
 
 export const FooterInfo = styled.div`
-  height: 20vh;
   width: 100%;
   background: #c40007;
   display: flex;
   justify-content: center;
   align-items: center;
+
 `;
 
 export const FooterLine = styled.div`
@@ -44,7 +44,13 @@ export const FooterLine = styled.div`
   width: 100%;
   max-width: 2100px;
 
-  @media screen and (max-width: 868px) {
+  @media screen and (max-width: 992px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,8 +62,13 @@ export const FooterLeft = styled.div`
   text-align: left;
   font-size: 20px;
 
-  @media screen and (max-width: 868px) {
+  @media screen and (max-width: 992px) {
     text-align: center;
+    font-size: 18px;
+  }
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    font-size: 15px;
   }
   `;
 
@@ -66,8 +77,13 @@ export const FooterRight = styled.div`
   text-align: right;
   font-size: 20px;
 
-  @media screen and (max-width: 868px) {
+  @media screen and (max-width: 992px) {
     text-align: center;
+    font-size: 18px;
+  }
+  @media screen and (max-width: 768px) {
+    text-align: center;
+    font-size: 15px;
   }
 `;
 
