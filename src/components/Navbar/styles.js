@@ -17,6 +17,10 @@ export const Nav = styled.nav`
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }
+
+  @media screen and (max-width: 768px) {
+   height: fit-content;
+  }
 `;
 
 export const NavContainer = styled.div`
@@ -40,6 +44,10 @@ export const NavLogo = styled.div`
 
 export const NavHome = styled.img`
   height: 70px;
+
+  @media screen and (max-width: 768px) {
+   height:50px;
+  }
 `;
 
 export const MobileIcon = styled.div`
