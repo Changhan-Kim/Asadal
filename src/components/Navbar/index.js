@@ -16,7 +16,7 @@ import { FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import Instagram from "../../assets/instagram2.png";
 import Asadal from "../../assets/Asadal.png";
-import menuPdf from "../../assets/menu.pdf";  // line to change file names
+import menuPdf from "../../assets/menu2026.pdf";  // line to change file names.
 
 const Navbar = ({toggle}) => {
   const [scrollNav, setScrollNav] = useState(false);
