@@ -92,5 +92,5 @@ const Navbar = ({toggle}) => {
     </>
   );
 };
-
+// Changes made for the sake of pushing to github (Ignore this in the future)
 export default Navbar;
